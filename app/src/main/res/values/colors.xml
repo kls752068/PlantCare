@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="forest">#174D39</color>
+  <color name="leaf">#206D50</color>
+  <color name="muted">#6B7D70</color>
+  <color name="page">#F6F8F4</color>
+  <color name="ink">#193529</color>
+  <color name="red">#A33D3D</color>
+</resources>

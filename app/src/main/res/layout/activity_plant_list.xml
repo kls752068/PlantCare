@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="22dp"
+    android:paddingEnd="22dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/bg_page">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="52dp"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      android:layout_marginBottom="20dp">
+    <TextView
+        android:id="@+id/buttonBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="←"
+        android:textSize="28sp"
+        android:textColor="@color/forest"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Go back"
+        android:onClick="goBack"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="My plants"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/ink"
+        android:layout_marginStart="8dp"/>
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="☘"
+        android:textSize="21sp"
+        android:textColor="@color/leaf"/>
+  </LinearLayout>
+  <EditText
+      android:id="@+id/editSearch"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:paddingStart="14dp"
+      android:paddingEnd="14dp"
+      android:background="@drawable/bg_input"
+      android:hint="Search plants by name or type"
+      android:singleLine="true"
+      android:inputType="text"
+      android:textColor="@color/ink"
+      android:textColorHint="@color/muted"
+      android:textSize="14sp"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="18dp">
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="46dp"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="@null"/>
+    <Space android:layout_width="10dp" android:layout_height="1dp"/>
+    <Button
+        android:id="@+id/buttonAll"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="46dp"
+        android:text="Show all"
+        android:textAllCaps="false"
+        android:textColor="@color/forest"
+        android:background="@drawable/bg_button_soft"
+        android:backgroundTint="@null"/>
+  </LinearLayout>
+  <TextView
+      android:id="@+id/textEmpty"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/bg_card"
+      android:padding="24dp"
+      android:text="Your garden is empty. Add your first plant!"
+      android:gravity="center"
+      android:textColor="@color/muted"
+      android:textSize="15sp"/>
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerPlants"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:clipToPadding="false"
+      android:paddingBottom="12dp"/>
+</LinearLayout>

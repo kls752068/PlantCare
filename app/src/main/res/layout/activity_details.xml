@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_page">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingStart="22dp"
+      android:paddingEnd="22dp"
+      android:paddingTop="16dp"
+      android:paddingBottom="28dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+      <TextView
+          android:id="@+id/buttonBack"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:gravity="center"
+          android:text="←"
+          android:textSize="28sp"
+          android:textColor="@color/forest"
+          android:clickable="true"
+          android:focusable="true"
+          android:contentDescription="Go back"
+          android:onClick="goBack"/>
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:text="Plant details"
+          android:textSize="22sp"
+          android:textStyle="bold"
+          android:textColor="@color/ink"
+          android:layout_marginStart="8dp"/>
+      <TextView
+          android:layout_width="42dp"
+          android:layout_height="42dp"
+          android:gravity="center"
+          android:text="☘"
+          android:textSize="21sp"
+          android:textColor="@color/leaf"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:padding="20dp"
+        android:orientation="vertical">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="PLANT INFORMATION"
+          android:textColor="@color/leaf"
+          android:textSize="12sp"
+          android:textStyle="bold"
+          android:layout_marginBottom="10dp"/>
+      <TextView
+          android:id="@+id/textDetails"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Plant information"
+          android:textSize="16sp"
+          android:textColor="@color/ink"
+          android:lineSpacingExtra="4dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonWater"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:text="✓  Mark as watered"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="@null"
+        android:stateListAnimator="@null"/>
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Delete plant"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:background="@drawable/bg_danger"
+        android:backgroundTint="@null"/>
+  </LinearLayout>
+</ScrollView>
